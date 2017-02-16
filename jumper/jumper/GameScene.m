@@ -7,14 +7,21 @@
 //
 
 #import "GameScene.h"
-
+#import "HeroClass.h"
 @implementation GameScene {
     SKShapeNode *_spinnyNode;
     SKLabelNode *_label;
 }
 
 - (void)didMoveToView:(SKView *)view {
+    self.anchorPoint = CGPointMake(0.5, 0.5);
     self.backgroundColor = [SKColor colorWithRed:1.5 green:2.0 blue:0.8 alpha:1.0];
+    
+    SKSpriteNode * ground =  [SKSpriteNode spriteNodeWithColor:[UIColor redColor] size:CGSizeMake(self.frame.size.width, 10)];
+    ground.position = CGPointMake(0, -self.frame.size.height/2);
+    [self addChild:ground];
+    HeroClass * hero = [HeroClass hero];
+    [self addChild:hero];
 
 }
 

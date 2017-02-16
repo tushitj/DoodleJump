@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1714D95A1E55FCD50031DF23 /* stickMan.png in Resources */ = {isa = PBXBuildFile; fileRef = 1714D9591E55FCD50031DF23 /* stickMan.png */; };
+		178F41761E553F4900A2BF55 /* HeroClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 178F41751E553F4900A2BF55 /* HeroClass.m */; };
 		17BCFD921E51612D00256AFA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 17BCFD911E51612D00256AFA /* main.m */; };
 		17BCFD951E51612D00256AFA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 17BCFD941E51612D00256AFA /* AppDelegate.m */; };
 		17BCFD971E51612D00256AFA /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 17BCFD961E51612D00256AFA /* GameScene.sks */; };
@@ -19,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1714D9591E55FCD50031DF23 /* stickMan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stickMan.png; sourceTree = "<group>"; };
+		178F41741E553F4900A2BF55 /* HeroClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroClass.h; sourceTree = "<group>"; };
+		178F41751E553F4900A2BF55 /* HeroClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroClass.m; sourceTree = "<group>"; };
 		17BCFD8D1E51612D00256AFA /* jumper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jumper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17BCFD911E51612D00256AFA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		17BCFD931E51612D00256AFA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -71,6 +76,8 @@
 				17BCFD981E51612D00256AFA /* Actions.sks */,
 				17BCFD9A1E51612D00256AFA /* GameScene.h */,
 				17BCFD9B1E51612D00256AFA /* GameScene.m */,
+				178F41741E553F4900A2BF55 /* HeroClass.h */,
+				178F41751E553F4900A2BF55 /* HeroClass.m */,
 				17BCFD9D1E51612D00256AFA /* GameViewController.h */,
 				17BCFD9E1E51612D00256AFA /* GameViewController.m */,
 				17BCFDA01E51612D00256AFA /* Main.storyboard */,
@@ -85,6 +92,7 @@
 		17BCFD901E51612D00256AFA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1714D9591E55FCD50031DF23 /* stickMan.png */,
 				17BCFD911E51612D00256AFA /* main.m */,
 			);
 			name = "Supporting Files";
@@ -152,6 +160,7 @@
 				17BCFDA21E51612D00256AFA /* Main.storyboard in Resources */,
 				17BCFD971E51612D00256AFA /* GameScene.sks in Resources */,
 				17BCFDA41E51612D00256AFA /* Assets.xcassets in Resources */,
+				1714D95A1E55FCD50031DF23 /* stickMan.png in Resources */,
 				17BCFDA71E51612D00256AFA /* LaunchScreen.storyboard in Resources */,
 				17BCFD991E51612D00256AFA /* Actions.sks in Resources */,
 			);
@@ -167,6 +176,7 @@
 				17BCFD9F1E51612D00256AFA /* GameViewController.m in Sources */,
 				17BCFD951E51612D00256AFA /* AppDelegate.m in Sources */,
 				17BCFD9C1E51612D00256AFA /* GameScene.m in Sources */,
+				178F41761E553F4900A2BF55 /* HeroClass.m in Sources */,
 				17BCFD921E51612D00256AFA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,6 +334,7 @@
 				17BCFDAD1E51612D00256AFA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
