@@ -10,4 +10,6 @@
 
 @interface HeroClass : SKSpriteNode
 +(id)hero;
+-(void)jumper;
+-(void)start;
 @end

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1714D95A1E55FCD50031DF23 /* stickMan.png in Resources */ = {isa = PBXBuildFile; fileRef = 1714D9591E55FCD50031DF23 /* stickMan.png */; };
+		1714D95D1E57E9270031DF23 /* WorldGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1714D95C1E57E9270031DF23 /* WorldGenerator.m */; };
 		178F41761E553F4900A2BF55 /* HeroClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 178F41751E553F4900A2BF55 /* HeroClass.m */; };
 		17BCFD921E51612D00256AFA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 17BCFD911E51612D00256AFA /* main.m */; };
 		17BCFD951E51612D00256AFA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 17BCFD941E51612D00256AFA /* AppDelegate.m */; };
@@ -22,6 +23,8 @@
 
 /* Begin PBXFileReference section */
 		1714D9591E55FCD50031DF23 /* stickMan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stickMan.png; sourceTree = "<group>"; };
+		1714D95B1E57E9270031DF23 /* WorldGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorldGenerator.h; sourceTree = "<group>"; };
+		1714D95C1E57E9270031DF23 /* WorldGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorldGenerator.m; sourceTree = "<group>"; };
 		178F41741E553F4900A2BF55 /* HeroClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroClass.h; sourceTree = "<group>"; };
 		178F41751E553F4900A2BF55 /* HeroClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroClass.m; sourceTree = "<group>"; };
 		17BCFD8D1E51612D00256AFA /* jumper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jumper.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,6 +79,8 @@
 				17BCFD981E51612D00256AFA /* Actions.sks */,
 				17BCFD9A1E51612D00256AFA /* GameScene.h */,
 				17BCFD9B1E51612D00256AFA /* GameScene.m */,
+				1714D95B1E57E9270031DF23 /* WorldGenerator.h */,
+				1714D95C1E57E9270031DF23 /* WorldGenerator.m */,
 				178F41741E553F4900A2BF55 /* HeroClass.h */,
 				178F41751E553F4900A2BF55 /* HeroClass.m */,
 				17BCFD9D1E51612D00256AFA /* GameViewController.h */,
@@ -177,6 +182,7 @@
 				17BCFD951E51612D00256AFA /* AppDelegate.m in Sources */,
 				17BCFD9C1E51612D00256AFA /* GameScene.m in Sources */,
 				178F41761E553F4900A2BF55 /* HeroClass.m in Sources */,
+				1714D95D1E57E9270031DF23 /* WorldGenerator.m in Sources */,
 				17BCFD921E51612D00256AFA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

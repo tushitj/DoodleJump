@@ -10,12 +10,20 @@
 
 @implementation HeroClass
 +(id)hero{
-//HeroClass * hero = [HeroClass spriteNodeWithColor:[UIColor blackColor] size:CGSizeMake(50,50)];
-    HeroClass * hero = [HeroClass spriteNodeWithImageNamed:@"stickMan"];
-    hero.position = CGPointMake(-100, -250);
-    hero.xScale = 0.1;
-    hero.yScale = 0.1;
+    HeroClass * hero = [HeroClass spriteNodeWithColor:[UIColor blackColor] size:CGSizeMake(40,40)];
+    hero.physicsBody=[SKPhysicsBody bodyWithRectangleOfSize:hero.size];
+   // hero.physicsBody.dynamic = YES;
     return hero;
+}
+
+-(void)jumper{
+    [self.physicsBody applyImpulse:CGVectorMake(0, 40)];
+}
+
+-(void)start{
+    SKAction *incrementRight = [SKAction moveByX:1 y:0 duration:0.03];
+    SKAction *moveRight = [SKAction repeatActionForever:incrementRight];
+    [self runAction:moveRight];
 }
 
 

@@ -18,7 +18,8 @@
     skView.showsNodeCount = YES;
     
     //configure the scene
-    SKScene * scene = [GameScene sceneWithSize:skView.bounds.size ];
+    //to change device orientation
+    SKScene * scene = [GameScene sceneWithSize:CGSizeMake(skView.frame.size.height, skView.frame.size.width) ];
     scene.scaleMode = SKSceneScaleModeAspectFill;
     [skView presentScene:scene];
 }
