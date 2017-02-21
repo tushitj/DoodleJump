@@ -14,10 +14,12 @@
 		171537141E5A322400EAAAB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 171537131E5A322400EAAAB6 /* Assets.xcassets */; };
 		171537171E5A322400EAAAB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 171537151E5A322400EAAAB6 /* LaunchScreen.storyboard */; };
 		171537231E5A397800EAAAB6 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 171537221E5A397800EAAAB6 /* GameViewController.m */; };
-		171537281E5A3DD100EAAAB6 /* gula.png in Resources */ = {isa = PBXBuildFile; fileRef = 171537241E5A3DD100EAAAB6 /* gula.png */; };
 		171537291E5A3DD100EAAAB6 /* gula2.png in Resources */ = {isa = PBXBuildFile; fileRef = 171537251E5A3DD100EAAAB6 /* gula2.png */; };
-		1715372A1E5A3DD100EAAAB6 /* gula3.png in Resources */ = {isa = PBXBuildFile; fileRef = 171537261E5A3DD100EAAAB6 /* gula3.png */; };
-		1715372B1E5A3DD100EAAAB6 /* platform.png in Resources */ = {isa = PBXBuildFile; fileRef = 171537271E5A3DD100EAAAB6 /* platform.png */; };
+		171EBB3A1E5AB56D00B68370 /* gula.png in Resources */ = {isa = PBXBuildFile; fileRef = 171EBB391E5AB56D00B68370 /* gula.png */; };
+		171EBB3C1E5AB57A00B68370 /* gula3.png in Resources */ = {isa = PBXBuildFile; fileRef = 171EBB3B1E5AB57A00B68370 /* gula3.png */; };
+		17EAE9A51E5CD1EA00571E03 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 17EAE9A41E5CD1EA00571E03 /* background.jpg */; };
+		17EAE9A91E5CD3D400571E03 /* gula.gif in Resources */ = {isa = PBXBuildFile; fileRef = 17EAE9A81E5CD3D400571E03 /* gula.gif */; };
+		17EAE9AD1E5CDDB000571E03 /* platform.png in Resources */ = {isa = PBXBuildFile; fileRef = 17EAE9AC1E5CDDB000571E03 /* platform.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,10 +35,12 @@
 		171537181E5A322400EAAAB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		171537211E5A397800EAAAB6 /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
 		171537221E5A397800EAAAB6 /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
-		171537241E5A3DD100EAAAB6 /* gula.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gula.png; sourceTree = "<group>"; };
 		171537251E5A3DD100EAAAB6 /* gula2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gula2.png; sourceTree = "<group>"; };
-		171537261E5A3DD100EAAAB6 /* gula3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gula3.png; sourceTree = "<group>"; };
-		171537271E5A3DD100EAAAB6 /* platform.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = platform.png; sourceTree = "<group>"; };
+		171EBB391E5AB56D00B68370 /* gula.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gula.png; sourceTree = "<group>"; };
+		171EBB3B1E5AB57A00B68370 /* gula3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gula3.png; sourceTree = "<group>"; };
+		17EAE9A41E5CD1EA00571E03 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
+		17EAE9A81E5CD3D400571E03 /* gula.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gula.gif; sourceTree = "<group>"; };
+		17EAE9AC1E5CDDB000571E03 /* platform.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = platform.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,10 +91,12 @@
 		171537071E5A322400EAAAB6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				171537241E5A3DD100EAAAB6 /* gula.png */,
+				17EAE9A81E5CD3D400571E03 /* gula.gif */,
+				17EAE9AC1E5CDDB000571E03 /* platform.png */,
+				17EAE9A41E5CD1EA00571E03 /* background.jpg */,
+				171EBB391E5AB56D00B68370 /* gula.png */,
 				171537251E5A3DD100EAAAB6 /* gula2.png */,
-				171537261E5A3DD100EAAAB6 /* gula3.png */,
-				171537271E5A3DD100EAAAB6 /* platform.png */,
+				171EBB3B1E5AB57A00B68370 /* gula3.png */,
 				171537081E5A322400EAAAB6 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -155,12 +161,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1715372A1E5A3DD100EAAAB6 /* gula3.png in Resources */,
-				171537281E5A3DD100EAAAB6 /* gula.png in Resources */,
-				1715372B1E5A3DD100EAAAB6 /* platform.png in Resources */,
 				171537171E5A322400EAAAB6 /* LaunchScreen.storyboard in Resources */,
+				171EBB3A1E5AB56D00B68370 /* gula.png in Resources */,
+				171EBB3C1E5AB57A00B68370 /* gula3.png in Resources */,
 				171537291E5A3DD100EAAAB6 /* gula2.png in Resources */,
+				17EAE9AD1E5CDDB000571E03 /* platform.png in Resources */,
+				17EAE9A51E5CD1EA00571E03 /* background.jpg in Resources */,
 				171537141E5A322400EAAAB6 /* Assets.xcassets in Resources */,
+				17EAE9A91E5CD3D400571E03 /* gula.gif in Resources */,
 				171537121E5A322400EAAAB6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,6 +340,7 @@
 				1715371D1E5A322400EAAAB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

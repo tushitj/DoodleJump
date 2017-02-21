@@ -7,11 +7,12 @@
 //
 
 #import "GameViewController.h"
-#define degrees(x) 180 * x / M_PI
+//#define degrees(x) 180 * x / M_PI
 @interface GameViewController (){
     CMMotionManager *motion;
     NSOperationQueue *operation;
     //NSTimer *timer;
+    int score;
 
 }
 
@@ -31,7 +32,7 @@
     
     //_rollLabel.text = roll;
     
-    NSLog(@" %f" , attitude.roll);
+    //NSLog(@" %f" , attitude.roll);
     //UITouch * tuknutie = [touches anyObject];
     //CGPoint bod = [tuknutie locationInView:self.view];
     if (attitude.roll > 0.01) {
@@ -59,7 +60,7 @@
 //HLAVNY SPUSTAC
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    score = 0;
     motion = [[CMMotionManager alloc] init];
     motion.deviceMotionUpdateInterval = 1/60;
     [motion startDeviceMotionUpdates];
@@ -86,15 +87,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
- #pragma mark - Navigation
- 
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
- }
- */
 
 - (IBAction)actionStart:(id)sender {
     
@@ -130,25 +122,25 @@
     _label6.center = CGPointMake(number, 126);
     
     
-    platform3pohyb = 2;
-    platform5pohyb = -2;
+    platform3motion = 2;
+    platform5motion = -2;
     
 }
 
 
 
--(void)PlatformaPad {
+-(void)PlatformPad {
     
     if (_labelBall.center.y > 500) {
-        padaniePlatformy = 1;
+        padaniePlatformy = 3;
     } else if (_labelBall.center.y > 450) {
-        padaniePlatformy = 2;
+        padaniePlatformy = 7;
     } else if (_labelBall.center.y > 400) {
-        padaniePlatformy = 4;
+        padaniePlatformy = 10;
     } else if (_labelBall.center.y > 300) {
-        padaniePlatformy = 5;
+        padaniePlatformy = 11;
     } else if (_labelBall.center.y > 250) {
-        padaniePlatformy = 6;
+        padaniePlatformy = 14;
     }
 }
 
@@ -156,7 +148,7 @@
 //HLAVNY POHYB
 -(void) Pohyb {
     
-    [self PohybPlatformy];
+    [self motionPlatformY];
     _labelBall.center = CGPointMake(_labelBall.center.x + sideMovement, _labelBall.center.y - upMovement);
     
     if (_labelBall.center.y < 100) {
@@ -168,37 +160,37 @@
     if ((CGRectIntersectsRect(_labelBall.frame, _label1.frame)) && (upMovement < -2) ) {
         
         [self Bounce];
-        [self PlatformaPad];
+        [self PlatformPad];
     }
     
     if ((CGRectIntersectsRect(_labelBall.frame, _label2.frame)) && (upMovement < -2) ) {
         
         [self Bounce];
-        [self PlatformaPad];
+        [self PlatformPad];
     }
     
     if ((CGRectIntersectsRect(_labelBall.frame, _label3.frame)) && (upMovement < -2) ) {
         
         [self Bounce];
-        [self PlatformaPad];
+        [self PlatformPad];
     }
     
     if ((CGRectIntersectsRect(_labelBall.frame, _label4.frame)) && (upMovement < -2) ) {
         
         [self Bounce];
-        [self PlatformaPad];
+        [self PlatformPad];
     }
     
     if ((CGRectIntersectsRect(_labelBall.frame, _label5.frame)) && (upMovement < -2) ) {
         
         [self Bounce];
-        [self PlatformaPad];
+        [self PlatformPad];
     }
     
     if ((CGRectIntersectsRect(_labelBall.frame, _label6.frame)) && (upMovement < -2) ) {
         
         [self Bounce];
-        [self PlatformaPad];
+        [self PlatformPad];
     }
     
     upMovement = upMovement - 0.3;
@@ -235,7 +227,7 @@
         }
     }
     
-    //    Kontrola, ci lopta neprekrocila okraje
+    //To check if the ball is not exceeded edge
     if (_labelBall.center.x < -11) {
         _labelBall.center = CGPointMake(350, _labelBall.center.y);
     } else if (_labelBall.center.x > 350) {
@@ -265,33 +257,34 @@
     } else {
         upMovement = 7;
     }
-    
+    score = score + 1;
+    [_scorelabel setText:[NSString stringWithFormat:@"%d" , score]];
 }
 
 
 //POHYB PLATFORMY KOD
-- (void) PohybPlatformy {
+- (void) motionPlatformY {
     
-    //   Pohyb platformy do stran a dole (ked skocime na platformu)
+   // Moving the platform to the sides and bottom (when she jumps on the platform)
     
     _label1.center = CGPointMake(_label1.center.x, _label1.center.y + padaniePlatformy);
     _label2.center = CGPointMake(_label2.center.x, _label2.center.y + padaniePlatformy);
-    _label3.center = CGPointMake(_label3.center.x + platform3pohyb, _label3.center.y + padaniePlatformy);
+    _label3.center = CGPointMake(_label3.center.x + platform3motion, _label3.center.y + padaniePlatformy);
     _label4.center = CGPointMake(_label4.center.x, _label4.center.y + padaniePlatformy);
-    _label5.center = CGPointMake(_label5.center.x + platform5pohyb, _label5.center.y + padaniePlatformy);
+    _label5.center = CGPointMake(_label5.center.x + platform5motion, _label5.center.y + padaniePlatformy);
     _label6.center = CGPointMake(_label6.center.x, _label6.center.y + padaniePlatformy);
     
     
     if (_label3.center.x > 320 ) {
-        platform3pohyb = -2;
+        platform3motion = -2;
     } else if(_label3.center.x < 60) {
-        platform3pohyb = 2;
+        platform3motion = 2;
     }
     
     if (_label5.center.x < 60) {
-        platform5pohyb = 2;
+        platform5motion = 2;
     } else if (_label5.center.x > 320) {
-        platform5pohyb = -2;
+        platform5motion = -2;
     }
     
     padaniePlatformy =  padaniePlatformy - 0.1;

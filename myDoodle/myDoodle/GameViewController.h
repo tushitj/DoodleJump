@@ -10,8 +10,8 @@
 #import <CoreMotion/CoreMotion.h>
 float upMovement;
 float sideMovement;
-int platform3pohyb;
-int platform5pohyb;
+int platform3motion;
+int platform5motion;
 int number;
 float padaniePlatformy;
 
@@ -24,6 +24,7 @@ BOOL stopMovement;
 
 
 @property (weak, nonatomic) IBOutlet UIButton *startButton;
+@property (weak, nonatomic) IBOutlet UILabel *scorelabel;
 @property (weak, nonatomic) IBOutlet UIImageView *labelBall;
 @property (weak, nonatomic) IBOutlet UIImageView *label1;
 @property (weak, nonatomic) IBOutlet UIImageView *label2;
@@ -37,8 +38,8 @@ BOOL stopMovement;
 
 - (void) Pohyb;
 - (void) Bounce;
-- (void) PohybPlatformy;
-- (void) PlatformaPad;
+- (void) motionPlatformY;
+- (void) PlatformPad;
 
 @end
 
