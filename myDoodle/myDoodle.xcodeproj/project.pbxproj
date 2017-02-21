@@ -18,7 +18,6 @@
 		171EBB3A1E5AB56D00B68370 /* gula.png in Resources */ = {isa = PBXBuildFile; fileRef = 171EBB391E5AB56D00B68370 /* gula.png */; };
 		171EBB3C1E5AB57A00B68370 /* gula3.png in Resources */ = {isa = PBXBuildFile; fileRef = 171EBB3B1E5AB57A00B68370 /* gula3.png */; };
 		17EAE9A51E5CD1EA00571E03 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 17EAE9A41E5CD1EA00571E03 /* background.jpg */; };
-		17EAE9A91E5CD3D400571E03 /* gula.gif in Resources */ = {isa = PBXBuildFile; fileRef = 17EAE9A81E5CD3D400571E03 /* gula.gif */; };
 		17EAE9AD1E5CDDB000571E03 /* platform.png in Resources */ = {isa = PBXBuildFile; fileRef = 17EAE9AC1E5CDDB000571E03 /* platform.png */; };
 /* End PBXBuildFile section */
 
@@ -39,7 +38,6 @@
 		171EBB391E5AB56D00B68370 /* gula.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gula.png; sourceTree = "<group>"; };
 		171EBB3B1E5AB57A00B68370 /* gula3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gula3.png; sourceTree = "<group>"; };
 		17EAE9A41E5CD1EA00571E03 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
-		17EAE9A81E5CD3D400571E03 /* gula.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gula.gif; sourceTree = "<group>"; };
 		17EAE9AC1E5CDDB000571E03 /* platform.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = platform.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,7 +89,6 @@
 		171537071E5A322400EAAAB6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				17EAE9A81E5CD3D400571E03 /* gula.gif */,
 				17EAE9AC1E5CDDB000571E03 /* platform.png */,
 				17EAE9A41E5CD1EA00571E03 /* background.jpg */,
 				171EBB391E5AB56D00B68370 /* gula.png */,
@@ -168,7 +165,6 @@
 				17EAE9AD1E5CDDB000571E03 /* platform.png in Resources */,
 				17EAE9A51E5CD1EA00571E03 /* background.jpg in Resources */,
 				171537141E5A322400EAAAB6 /* Assets.xcassets in Resources */,
-				17EAE9A91E5CD3D400571E03 /* gula.gif in Resources */,
 				171537121E5A322400EAAAB6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

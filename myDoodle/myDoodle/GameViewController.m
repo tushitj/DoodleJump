@@ -242,7 +242,8 @@
                                   [UIImage imageNamed:@"gula2.png"],
                                   [UIImage imageNamed:@"gula3.png"],
                                   [UIImage imageNamed:@"gula2.png"],
-                                  [UIImage imageNamed:@"gula.png"], nil ];
+                                  [UIImage imageNamed:@"gula.gif"], nil ];
+    
     
     [_labelBall setAnimationRepeatCount:1];
     _labelBall.animationDuration = 0.2;
