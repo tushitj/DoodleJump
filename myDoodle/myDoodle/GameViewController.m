@@ -77,6 +77,9 @@
     _label4.hidden = YES;
     _label5.hidden = YES;
     _label6.hidden = YES;
+    _labelBack.hidden = YES;
+    _gameOverLabel.hidden = YES;
+    _gameOverMenu.hidden = YES;
     
     
     
@@ -192,7 +195,20 @@
         [self Bounce];
         [self PlatformPad];
     }
-    
+    if([[UIScreen mainScreen] bounds].size.height < _labelBall.frame.origin.y){
+        // GAME OVER LOGIC
+        _labelBall.hidden = YES;
+        _label1.hidden = YES;
+        _label2.hidden = YES;
+        _label3.hidden = YES;
+        _label4.hidden = YES;
+        _label5.hidden = YES;
+        _label6.hidden = YES;
+        _gameOverLabel.hidden = NO;
+        _gameOverMenu.hidden = NO;
+        
+        
+    }
     upMovement = upMovement - 0.3;
     
     if (moveBallLeft == YES) {

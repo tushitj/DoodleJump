@@ -21,7 +21,10 @@ BOOL stopMovement;
 
 
 @interface GameViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIButton *labelBack;
 
+@property (weak, nonatomic) IBOutlet UILabel *gameOverLabel;
+@property (weak, nonatomic) IBOutlet UIButton *gameOverMenu;
 
 @property (weak, nonatomic) IBOutlet UIButton *startButton;
 @property (weak, nonatomic) IBOutlet UILabel *scorelabel;

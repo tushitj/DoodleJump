@@ -164,10 +164,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="vLf-yK-S0a">
-                                <rect key="frame" x="0.0" y="12" width="375" height="655"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="vLf-yK-S0a">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ms-Sa-n54">
+                                <rect key="frame" x="168" y="176" width="39" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Menu"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="1Ik-JU-06j"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Game Over!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oAy-fF-u4h">
+                                <rect key="frame" x="123" y="66" width="129" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="platform.png" translatesAutoresizingMaskIntoConstraints="NO" id="y6J-TB-Ajn" userLabel="label6">
                                 <rect key="frame" x="26" y="106" width="120" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -211,7 +226,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OaM-6U-h3y">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OaM-6U-h3y" userLabel="labelBack">
                                 <rect key="frame" x="17" y="18" width="44" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="&lt;Back"/>
@@ -223,12 +238,15 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="gameOverLabel" destination="oAy-fF-u4h" id="Ocf-Ps-J81"/>
+                        <outlet property="gameOverMenu" destination="4ms-Sa-n54" id="4s9-ri-YUn"/>
                         <outlet property="label1" destination="A4B-zq-yaJ" id="85n-qL-dOH"/>
                         <outlet property="label2" destination="X8Z-wz-aap" id="Jwq-79-qvZ"/>
                         <outlet property="label3" destination="I5W-Sn-LJ8" id="yjy-Ea-b2u"/>
                         <outlet property="label4" destination="Jne-L9-QRV" id="5LV-Hb-cLP"/>
                         <outlet property="label5" destination="mtd-p2-nzJ" id="bYz-WN-f0e"/>
                         <outlet property="label6" destination="y6J-TB-Ajn" id="iT4-XK-1FJ"/>
+                        <outlet property="labelBack" destination="OaM-6U-h3y" id="IvM-Tc-ScT"/>
                         <outlet property="labelBall" destination="Tas-Q6-Bop" id="RCC-Jz-WrK"/>
                         <outlet property="scorelabel" destination="jDQ-HB-l9w" id="c7B-iF-YZ3"/>
                         <outlet property="startButton" destination="Piw-da-kqa" id="RKW-Dr-SCe"/>
@@ -237,7 +255,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h0e-iJ-iIi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1796" y="-217.24137931034485"/>
+            <point key="canvasLocation" x="1796" y="-314"/>
         </scene>
     </scenes>
     <resources>
